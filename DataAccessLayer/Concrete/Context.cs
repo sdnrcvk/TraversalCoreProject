@@ -12,6 +12,11 @@ namespace DataAccessLayer.Concrete
         {
             _configuration = configuration;
         }
+
+        public Context()
+        {
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string sqlDbConnectionString = _configuration.GetConnectionString("MsSqlConnection");
