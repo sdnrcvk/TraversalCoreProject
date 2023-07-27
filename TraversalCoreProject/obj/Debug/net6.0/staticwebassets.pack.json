@@ -5,6 +5,218 @@
       "PackagePath": "staticwebassets\\TraversalCoreProject.bundle.scp.css"
     },
     {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\about.html",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\about.html"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\css\\style-starter.css",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\css\\style-starter.css"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\banner1.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\banner1.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\banner2.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\banner2.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\banner3.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\banner3.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\banner4.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\banner4.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\c1.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\c1.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\c2.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\c2.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\c3.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\c3.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\c4.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\c4.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\close.png",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\close.png"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\date.png",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\date.png"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\dots.png",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\dots.png"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\down.png",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\down.png"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\g1.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\g1.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\g10.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\g10.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\g2.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\g2.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\g3.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\g3.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\g4.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\g4.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\g5.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\g5.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\g6.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\g6.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\g7.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\g7.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\g8.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\g8.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\g9.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\g9.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\img-sprite.png",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\img-sprite.png"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\team1.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\team1.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\team2.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\team2.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\team3.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\team3.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\images\\team4.jpg",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\images\\team4.jpg"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\all.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\all.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\app.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\jquery.countup.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\jquery.countup.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\jquery.zoomslider.min.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\jquery.zoomslider.min.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\lightbox-plus-jquery.min.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\lightbox-plus-jquery.min.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\modernizr-2.6.2.min.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\modernizr-2.6.2.min.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\owl.carousel.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\assets\\js\\theme-change.js",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\assets\\js\\theme-change.js"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\contact.html",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\contact.html"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\index.html",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\index.html"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\services.html",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\services.html"
+    },
+    {
+      "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\Traversal-Starter\\starter-license-W3Layouts.txt",
+      "PackagePath": "staticwebassets\\Traversal-Starter\\starter-license-W3Layouts.txt"
+    },
+    {
       "Id": "D:\\Projeler\\TraversalCoreProject\\TraversalCoreProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

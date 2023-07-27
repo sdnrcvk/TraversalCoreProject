@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+@Html.Partial("/Views/LayoutPartials/_HeaderPartial.cshtml")
+
+<body>
+    <!--header-->
+    @Html.Partial("/Views/LayoutPartials/_NavbarPartial.cshtml")
+    <!-- //header -->
+    @RenderBody()
+    <!--/w3l-footer-29-main-->
+    @Html.Partial("/Views/LayoutPartials/_FooterPartial.cshtml")
+    @Html.Partial("/Views/LayoutPartials/_ScriptsPartial.cshtml")
+
+</body>
+
+</html>
