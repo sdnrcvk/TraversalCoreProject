@@ -10,17 +10,24 @@ Author URL: http://w3layouts.com
 <!doctype html>
 <html lang="zxx">
 
-@Html.Partial("/Views/LayoutPartials/_HeaderPartial.cshtml")
+<!--head-->
+@await Html.PartialAsync("/Views/LayoutPartials/_HeaderPartial.cshtml")
+<!-- //head -->
 
 <body>
-    <!--header-->
-    @Html.Partial("/Views/LayoutPartials/_NavbarPartial.cshtml")
-    <!-- //header -->
-    @RenderBody()
-    <!--/w3l-footer-29-main-->
-    @Html.Partial("/Views/LayoutPartials/_FooterPartial.cshtml")
-    @Html.Partial("/Views/LayoutPartials/_ScriptsPartial.cshtml")
+    <!--navbar-->
+    @await Html.PartialAsync("/Views/LayoutPartials/_NavbarPartial.cshtml")
+    <!-- //navbar -->
 
+    @RenderBody()
+
+    <!--footer-->
+    @await Html.PartialAsync("/Views/LayoutPartials/_FooterPartial.cshtml")
+    <!-- //footer-->
+
+    <!--scripts-->
+    @await Html.PartialAsync("/Views/LayoutPartials/_ScriptsPartial.cshtml")
+    <!-- //scripts-->
 </body>
 
 </html>
