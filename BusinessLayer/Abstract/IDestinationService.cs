@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-    public class IDestinationService:IGenericService<Destination>
+    public interface IDestinationService :IGenericService<Destination>
     {
     }
 }

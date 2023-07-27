@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-    public class IGuideService:IGenericService<Guide>
+    public interface IGuideService :IGenericService<Guide>
     {
     }
 }
