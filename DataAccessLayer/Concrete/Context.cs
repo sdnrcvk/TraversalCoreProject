@@ -1,25 +1,13 @@
 ﻿using EntityLayer.Concrete;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace DataAccessLayer.Concrete
 {
     public class Context:DbContext
     {
-        private readonly IConfiguration _configuration;
-
-        public Context(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
-
-        public Context()
-        {
-        }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string sqlDbConnectionString = _configuration.GetConnectionString("MsSqlConnection");
+            string sqlDbConnectionString ="Server=DESKTOP-RMT2LGC\\SQLEXPRESS; Database=TraversalDB;Trusted_Connection=True;";
             optionsBuilder.UseSqlServer(sqlDbConnectionString);
         }
 
