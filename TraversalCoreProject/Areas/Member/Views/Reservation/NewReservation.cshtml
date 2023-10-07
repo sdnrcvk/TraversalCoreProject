@@ -1,0 +1,58 @@
+﻿@model EntityLayer.Concrete.Reservation
+@{
+    ViewData["Title"] = "NewReservation";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h1>Yeni Rezervasyon Sayfası</h1>
+<form method="post">
+    <div class="form-group">
+        @Html.Label("Lokasyon")
+        @Html.DropDownListFor(x=>x.Destination,(List<SelectListItem>)ViewBag.v,new {@class="form-control"})
+    </div>
+    <div class="form-group">
+        @Html.Label("Kişi Sayısı")
+        <input type="text" asp-for="PersonCount" class="form-control"/>
+    </div>
+    <div class="form-group">
+        @Html.Label("Tarih")
+        <input type="date" asp-for="ReservationDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        @Html.Label("Varsa Eklemek İstedikleriniz")
+        <input type="text" asp-for="Description" class="form-control" />
+    </div>
+    <button class="btn btn-outline-success">Rezervasyon Yap</button>
+</form>
+
+<!-- Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmationModalLabel">Rezervasyon Onayı</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Rezervasyonunuz başlangıçta onay bekliyor şeklinde alınacaktır. Lütfen rezervasyon onaylanma süreci ile ilgili "Güncel Rezervasyonlarım" menüsü üzerinden rezervasyon durumunuzu takip etmeyi unutmayın.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Sayfa yüklendiğinde pop-up mesajını göster
+        $("#confirmationModal").modal('show');
+
+        // Kapatma butonuna ve "x" simgesine tıklandığında pop-up'ı kapat
+        $("#confirmationModal .close, #confirmationModal .modal-footer button").click(function () {
+            $("#confirmationModal").modal('hide');
+        });
+    });
+</script>
