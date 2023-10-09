@@ -7,22 +7,29 @@
 
 <h1>Onay Bekleyen Rezervasyonlar</h1>
 
-<table class="table table-bordered">
-    <tr>
-        <th>#</th>
-        <th>Lokasyon</th>
-        <th>Kişi Sayısı</th>
-        <th>Rezervasyon Tarihi</th>
-        <th>Durum</th>
-    </tr>
-    @foreach (var item in Model)
-    {
+@if (Model.Any())
+{
+    <table class="table table-bordered">
         <tr>
-            <td>@item.AppUserId</td>
-            <td>@item.Destination</td>
-            <td>@item.PersonCount</td>
-            <td>@item.ReservationDate</td>
-            <td>@item.Status</td>
+            <th>#</th>
+            <th>Lokasyon</th>
+            <th>Kişi Sayısı</th>
+            <th>Rezervasyon Tarihi</th>
+            <th>Durum</th>
         </tr>
-    }
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.AppUserId</td>
+                <td>@item.Destination.City</td>
+                <td>@item.PersonCount</td>
+                <td>@item.ReservationDate</td>
+                <td>@item.Status</td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <h5>Rezervasyon bulunmamaktadır...</h5>
+}
