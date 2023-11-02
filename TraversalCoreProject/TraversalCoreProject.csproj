@@ -31,8 +31,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Member\Data\" />
     <Folder Include="wwwroot\userimages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Admin\Views\Destination\Index.cshtml" />
+    <None Include="Areas\Member\Views\Comment\Index.cshtml" />
+    <None Include="Areas\Member\Views\Dashboard\Index.cshtml" />
+    <None Include="Areas\Member\Views\Destination\Index.cshtml" />
+    <None Include="Areas\Member\Views\Profile\Index.cshtml" />
+    <None Include="Areas\Member\Views\Reservation\MyApprovalReservation.cshtml" />
+    <None Include="Areas\Member\Views\Reservation\MyCurrentReservation.cshtml" />
+    <None Include="Areas\Member\Views\Reservation\MyOldReservation.cshtml" />
+    <None Include="Areas\Member\Views\Reservation\NewReservation.cshtml" />
+    <None Include="Areas\Member\Views\_ViewImports.cshtml" />
+    <None Include="wwwroot\sneat-1.0.0\.github\workflows\handle-new-issue-comment.yml" />
+    <None Include="wwwroot\sneat-1.0.0\.github\workflows\handle-new-issue.yml" />
+    <None Include="wwwroot\sneat-1.0.0\.github\workflows\issue-staler.yml" />
   </ItemGroup>
 
 </Project>
