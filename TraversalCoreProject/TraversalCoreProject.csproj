@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Areas\Admin\_ViewImports.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.6.0" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
@@ -39,6 +43,7 @@
 
   <ItemGroup>
     <None Include="Areas\Admin\Views\Destination\Index.cshtml" />
+    <None Include="Areas\Admin\_ViewImports.cshtml" />
     <None Include="Areas\Member\Views\Comment\Index.cshtml" />
     <None Include="Areas\Member\Views\Dashboard\Index.cshtml" />
     <None Include="Areas\Member\Views\Destination\Index.cshtml" />
