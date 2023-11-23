@@ -41,6 +41,9 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+////For redirection to 404 page
+app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404","?code={0}");
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthentication();
