@@ -2,8 +2,9 @@
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
-namespace TraversalCoreProject.Controllers
+namespace TraversalCoreProject.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class GuideController : Controller
     {
         private readonly IGuideService _guideService;
@@ -35,7 +36,7 @@ namespace TraversalCoreProject.Controllers
         [HttpGet]
         public IActionResult EditGuide(int id)
         {
-            var values=_guideService.TGetById(id);
+            var values = _guideService.TGetById(id);
             return View(values);
         }
 
