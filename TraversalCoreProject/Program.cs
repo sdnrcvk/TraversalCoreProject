@@ -12,6 +12,16 @@ using TraversalCoreProject.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddLogging(x =>
+{
+    x.ClearProviders();
+    x.SetMinimumLevel(LogLevel.Debug);
+    x.AddDebug();
+    //Add file logger here
+    var path = Directory.GetCurrentDirectory();
+    x.AddFile($"{path}\\Logs\\Log1.txt");
+});
+
 builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>().AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<Context>();
 
@@ -30,8 +40,8 @@ builder.Services.AddMvc(config =>
 
 builder.Services.AddMvc();
 
-
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
