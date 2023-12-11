@@ -15,6 +15,7 @@
     <PackageReference Include="EPPlus" Version="7.0.3" />
     <PackageReference Include="FluentValidation" Version="11.6.0" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="iTextSharp.LGPLv2.Core" Version="3.4.14" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.20" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.20" />
@@ -42,6 +43,7 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Member\Data\" />
     <Folder Include="Logs\" />
+    <Folder Include="wwwroot\pdfreports\" />
     <Folder Include="wwwroot\userimages\" />
   </ItemGroup>
 
