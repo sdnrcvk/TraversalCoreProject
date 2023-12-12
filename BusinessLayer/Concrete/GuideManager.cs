@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,11 @@ namespace BusinessLayer.Concrete
         public void TAdd(Guide t)
         {
             _guideDal.Add(t);
+        }
+
+        public void TChangeTheStatusByGuide(int id)
+        {
+            _guideDal.ChangeTheStatusByGuide(id);
         }
 
         public void TDelete(Guide t)

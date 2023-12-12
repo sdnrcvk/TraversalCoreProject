@@ -28,14 +28,15 @@
             @{
                 if (item.Status == true)
                 {
-                    <td><a href="#" class="btn btn-outline-warning">Pasif Yap</a></td>
+                    <td><a href="/Admin/Guide/ChangeTheStatus/@item.GuideId" class="btn btn-outline-warning">Pasif Yap</a></td>
                 }
                 else
                 {
-                    <td><a href="#" class="btn btn-outline-info">Aktif Yap</a></td>
+                    <td><a href="/Admin/Guide/ChangeTheStatus/@item.GuideId" class="btn btn-outline-info">Aktif Yap</a></td>
                 }
             }
-            <td><a href="#" class="btn btn-outline-success">Düzenle</a></td>
+            <td><a href="/Admin/Guide/EditGuide/@item.GuideId" class="btn btn-outline-success">Düzenle</a></td>
+            <td><a href="/Admin/Guide/DeleteGuide/@item.GuideId" class="btn btn-outline-danger">Sil</a></td>
         </tr>
     }
 </table>

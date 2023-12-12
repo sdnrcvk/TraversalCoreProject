@@ -9,6 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface IGuideDal:IGenericDal<Guide>
     {
-
+        void ChangeTheStatusByGuide(int id);
     }
 }

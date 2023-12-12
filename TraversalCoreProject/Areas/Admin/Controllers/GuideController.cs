@@ -36,7 +36,7 @@ namespace TraversalCoreProject.Areas.Admin.Controllers
             if (result.IsValid)
             {
                 _guideService.TAdd(guide);
-                return RedirectToAction("Index");
+                return RedirectToAction("Guide","Admin");
             }
             else
             {
@@ -60,13 +60,19 @@ namespace TraversalCoreProject.Areas.Admin.Controllers
         public IActionResult EditGuide(Guide guide)
         {
             _guideService.TUpdate(guide);
-            return RedirectToAction("Index");
+            return RedirectToAction("Guide","Admin");
         }
 
-        [HttpPost]
+        public IActionResult DeleteGuide(int id)
+        {
+            var values = _guideService.TGetById(id);
+            _guideService.TDelete(values);
+            return RedirectToAction("Guide", "Admin");
+        }
         public IActionResult ChangeTheStatus(int id)
         {
-            return RedirectToAction("Index");
+            _guideService.TChangeTheStatusByGuide(id);
+            return RedirectToAction("Guide", "Admin");
         }
     }
 }
