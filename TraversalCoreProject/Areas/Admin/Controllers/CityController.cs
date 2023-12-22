@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BusinessLayer.Abstract;
+using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using TraversalCoreProject.Models;
 
@@ -7,6 +9,13 @@ namespace TraversalCoreProject.Areas.Admin.Controllers
     [Area("Admin")]
     public class CityController : Controller
     {
+        private readonly IDestinationService _destinationService;
+
+        public CityController(IDestinationService destinationService)
+        {
+            _destinationService = destinationService;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -14,30 +23,24 @@ namespace TraversalCoreProject.Areas.Admin.Controllers
 
         public IActionResult CityList()
         {
-            var jsonCity = JsonConvert.SerializeObject(cities);
+            var jsonCity = JsonConvert.SerializeObject(_destinationService.TGetAll());
             return Json(jsonCity);
         }
 
-        public static List<CityClass> cities = new List<CityClass>
+        [HttpPost]
+        public IActionResult AddCityDestination(Destination destination)
         {
-            new CityClass
-            {
-                CityId=1,
-                CityName="Üsküp",
-                CityCountry="Makedonya"
-            },
-            new CityClass
-            {
-                CityId= 2,
-                CityName="Roma",
-                CityCountry="İtalya"
-            },
-            new CityClass
-            {
-                CityId = 3,
-                CityName="Londra",
-                CityCountry="İngiltere"
-            }
-        };
+            destination.Status = true;
+            _destinationService.TAdd(destination);
+            var values=JsonConvert.SerializeObject(destination);
+            return Json(values);
+        }
+
+        public IActionResult GetById(int DestinationID)
+        {
+            var values = _destinationService.TGetById(DestinationID);
+            var jsonCity = JsonConvert.SerializeObject(values);
+            return Json(jsonCity);
+        }
     }
 }
