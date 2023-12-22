@@ -20,11 +20,15 @@
 </div>
 <br />
 <div>
-    <input type="text" id="txtid" placeholder="Şehir id değerini giriniz" class="form-control" />
+    <input type="text" id="txtid" placeholder="Listelenecek şehir id değerini giriniz" class="form-control" />
 </div>
 <br />
 <div id="destinationlistbyid">
 
+</div>
+<br />
+<div>
+    <input type="text" id="txtcityid" placeholder="Silinecek şehir id değerini giriniz" class="form-control" />
 </div>
 <br />
 <div>
@@ -50,7 +54,32 @@
     <br />
 </div>
 <br />
-
+<br />
+<div>
+    <input type="text" id="txtcityeditid" placeholder="Güncellenecek şehir id değerinin giriniz" class="form-control" />
+    <br />    
+    <input type="text" id="txteditcity" placeholder="Güncellenecek şehir adını giriniz" class="form-control" />
+    <br />
+    <input type="text" id="txteditdaynight" placeholder="Güncellenecek Gün - Gece Sayısı" class="form-control" />
+    <br />
+    <input type="text" id="txteditprice" placeholder="Güncellenecek Fiyat" class="form-control" />
+    <br />
+    <input type="text" id="txteditimage" placeholder="Güncellenecek Ana Görsel" class="form-control" />
+    <br />
+    <input type="text" id="txteditcapacity" placeholder="Güncellenecek konaklayacak kişi sayısı" class="form-control" />
+    <br />
+    <input type="text" id="txteditcoverimage" placeholder="Güncellenecek Kapak Görseli" class="form-control" />
+    <br />
+    <input type="text" id="txteditimage2" placeholder="Güncellenecek Görsel 2" class="form-control" />
+    <br />
+    <textarea id="txteditdetails1" cols="30" rows="5" placeholder="Güncellenecek Detay 1" class="form-control"></textarea>
+    <br />
+    <textarea id="txteditdetails2" cols="30" rows="5" placeholder="Güncellenecek Detay 2" class="form-control"></textarea>
+    <br />
+    <textarea id="txteditdescription" cols="30" rows="5" placeholder="Güncellenecek Açıklama" class="form-control"></textarea>
+    <br />
+</div>
+<br />
 
 <script>
     $("#btngetlist").click(function () {
@@ -107,9 +136,58 @@
             success: function (func) {
                 let result = jQuery.parseJSON(func);
                 console.log(result);
-                let tablehtml = "<table class=table table-bordered> <tr> <th> Şehir Adı </th> <th> Gün-Gece </th> <th> Fiyatı </th> </tr>" +
-                    `<tr><td>${result.City}</td><td>${result.DayNight}</td><td>${result.Price} ₺</td></tr> </table>`;
-                $("#destinationlistbyid").html(tablehtml);
+                if (result) {
+                    // Destination found, display the result
+                    let tablehtml = "<table class=table table-bordered> <tr> <th> Şehir Adı </th> <th> Gün-Gece </th> <th> Fiyatı </th> </tr>" +
+                        `<tr><td>${result.City}</td><td>${result.DayNight}</td><td>${result.Price} ₺</td></tr> </table>`;
+                    $("#destinationlistbyid").html(tablehtml);
+                } else {
+                    // No destination found, display a message
+                    $("#destinationlistbyid").html("<p>Böyle bir şehir bulunamadı.</p>");
+                }
+            },
+            error: function () {
+                // Handle error if the AJAX request fails
+                $("#destinationlistbyid").html("<p>Bir hata oluştu.</p>");
+            }
+        });
+    });
+
+    $("#btndeletecity").click(x => {
+        let id = $("#txtcityid").val();
+        $.ajax({
+            contentType: "application/json",
+            dataType: "json",
+            type: "Post",
+            url: "/Admin/City/DeleteCityDestination/"+id,
+            data: { DestinationID: id },
+            success: function (func) {
+                alert("Şehir - Rota Başarılı Bir Şekilde Silindi");
+            },
+        });
+    });
+
+    $("#btnupdatecity").click(function () {
+        let updatedcityvalues = {
+            DestinationID:$("#txtcityeditid").val(),
+            City: $("#txteditcity").val(),
+            DayNight: $("#txteditdaynight").val(),
+            Price: $("#txteditprice").val(),
+            Capacity: $("#txteditcapacity").val(),
+            Image: $("#txteditimage").val(),
+            Description: $("#txteditdescription").val(),
+            CoverImage: $("#txteditcoverimage").val(),
+            Details1: $("#txteditdetails1").val(),
+            Details2: $("#txteditdetails2").val(),
+            Image2: $("#txteditimage2").val(),
+        };
+        $.ajax({
+            type: "Post",
+            url: "/Admin/City/UpdateCityDestination/",
+            data: updatedcityvalues,
+            success: function (func) {
+                let result = jQuery.parseJSON(func);
+                alert("Şehir - Rota Başarılı Bir Şekilde Güncellendi");
             }
         });
     });
