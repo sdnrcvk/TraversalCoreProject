@@ -15,11 +15,11 @@ namespace DataAccessLayer.Migrations
                 {
                     CommentId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CommentUser = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CommentDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CommentContent = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CommentState = table.Column<bool>(type: "bit", nullable: false),
-                    DestinationId = table.Column<int>(type: "int", nullable: false)
+                    CommentUser = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CommentDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    CommentContent = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CommentState = table.Column<bool>(type: "bit", nullable: true),
+                    DestinationId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {

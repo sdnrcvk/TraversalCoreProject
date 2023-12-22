@@ -19,7 +19,7 @@ namespace DataAccessLayer.Migrations
                 name: "Destination",
                 table: "Reservations",
                 type: "nvarchar(max)",
-                nullable: false,
+                nullable: true,
                 defaultValue: "");
         }
     }

@@ -12,21 +12,21 @@ namespace DataAccessLayer.Migrations
                 name: "Client",
                 table: "Testimonials",
                 type: "nvarchar(max)",
-                nullable: false,
+                nullable: true,
                 defaultValue: "");
 
             migrationBuilder.AddColumn<string>(
                 name: "ClientImage",
                 table: "Testimonials",
                 type: "nvarchar(max)",
-                nullable: false,
+                nullable: true,
                 defaultValue: "");
 
             migrationBuilder.AddColumn<string>(
                 name: "Comment",
                 table: "Testimonials",
                 type: "nvarchar(max)",
-                nullable: false,
+                nullable: true,
                 defaultValue: "");
         }
 

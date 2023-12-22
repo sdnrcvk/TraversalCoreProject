@@ -12,7 +12,7 @@ namespace DataAccessLayer.Migrations
                 name: "DestinationId",
                 table: "Reservations",
                 type: "int",
-                nullable: false,
+                nullable: true,
                 defaultValue: 0);
 
             migrationBuilder.CreateIndex(
