@@ -1,6 +1,6 @@
-﻿namespace TraversalCoreProject.Areas.Admin.Models
+﻿namespace DTOLayer.DTOs.AnnouncementDTOs
 {
-    public class AnnouncementListViewModel
+    public class AnnouncementListDto
     {
         public int AnnouncementId { get; set; }
         public string Title { get; set; }

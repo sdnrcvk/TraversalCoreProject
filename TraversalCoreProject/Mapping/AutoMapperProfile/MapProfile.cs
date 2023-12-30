@@ -14,6 +14,9 @@ namespace TraversalCoreProject.Mapping.AutoMapperProfile
             CreateMap<AnnouncementAddDto, Announcement>();
             CreateMap<Announcement,AnnouncementAddDto>();
 
+            CreateMap<AnnouncementListDto, Announcement>().ReverseMap();
+            CreateMap<AnnouncementUpdateDto, Announcement>().ReverseMap();
+
             CreateMap<AppUserRegisterDto, AppUser>();
             CreateMap<AppUser,AppUserRegisterDto>();
 
