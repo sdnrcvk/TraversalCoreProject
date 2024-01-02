@@ -22,6 +22,7 @@ builder.Services.AddLogging(x =>
 builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>().AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<Context>();
 
+builder.Services.AddHttpClient();
 
 builder.Services.ContainerDependencies();
 
