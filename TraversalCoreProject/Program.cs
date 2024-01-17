@@ -2,8 +2,10 @@ using BusinessLayer.Container;
 using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
 using FluentValidation.AspNetCore;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using System.Reflection;
 using TraversalCoreProject.CQRS.Handlers.DestinationHandlers;
 using TraversalCoreProject.Models;
 
@@ -15,6 +17,8 @@ builder.Services.AddScoped<GetDestinationByIDQueryHandler>();
 builder.Services.AddScoped<CreateDestinationCommandHandler>();
 builder.Services.AddScoped<RemoveDestinationCommandHandler>();
 builder.Services.AddScoped<UpdateDestinationCommandHandler>();
+
+builder.Services.AddMediatR(typeof(Program));
 
 builder.Services.AddLogging(x =>
 {
