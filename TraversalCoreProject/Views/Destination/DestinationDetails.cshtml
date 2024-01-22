@@ -106,7 +106,7 @@
                     @await Component.InvokeAsync("_GuideDetails")
                     <!--//author-card-->
                     @await Component.InvokeAsync("_CommentListPartial",new {id=ViewBag.Id})
-                    @await Html.PartialAsync("~/Views/Comment/AddComment.cshtml")
+                    @await Html.PartialAsync("~/Views/Comment/AddComment.cshtml",new {id=ViewBag.destId})
                 </div>
             </div>
         </div>

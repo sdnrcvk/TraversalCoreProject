@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
+using DocumentFormat.OpenXml.Drawing.Charts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TraversalCoreProject.ViewComponents.Comment
@@ -9,8 +10,10 @@ namespace TraversalCoreProject.ViewComponents.Comment
         CommentManager commentManager = new CommentManager(new EfCommentDal());
         public IViewComponentResult Invoke(int id)
         {
-            var comments = commentManager.TGetByDestinationId(id);
-            return View(comments);
+            var values = commentManager.TGetListCommentWithDestinationAndUser(id);
+            ViewBag.commentCount = values.Count();
+
+            return View(values);
         }
     }
 }

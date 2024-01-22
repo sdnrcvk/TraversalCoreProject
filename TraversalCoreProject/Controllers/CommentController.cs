@@ -8,8 +8,11 @@ namespace TraversalCoreProject.Controllers
     public class CommentController : Controller
     {
         CommentManager commentManager = new CommentManager(new EfCommentDal());
-        public PartialViewResult AddComment()
+
+        [HttpGet]
+        public PartialViewResult AddComment(int id)
         {
+            ViewBag.destId = id;
             return PartialView();
         }
 
