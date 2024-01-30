@@ -18,7 +18,7 @@ namespace SignalRApi.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     City = table.Column<int>(type: "integer", nullable: true),
                     CityVisitCount = table.Column<int>(type: "integer", nullable: true),
-                    VisitDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                    VisitDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true)
                 },
                 constraints: table =>
                 {
