@@ -41,7 +41,7 @@ namespace TraversalCoreProject.Areas.Member.Controllers
                 var saveLocation = resource + "/wwwroot/userimages/" + imageName;
                 var stream=new FileStream(saveLocation,FileMode.Create);
                 await p.Image.CopyToAsync(stream);
-                user.ImageUrl = imageName;
+                user.ImageUrl = "/userimages/"+imageName;
             }
             user.Name=p.Name;
             user.Surname=p.Surname;
