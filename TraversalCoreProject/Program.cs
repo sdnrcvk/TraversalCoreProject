@@ -52,6 +52,12 @@ builder.Services.AddMvc(config =>
 
 builder.Services.AddMvc();
 
+//It will redirect the non-authenticated user to the login page
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Login/SignIn/";
+});
+
 var app = builder.Build();
 
 
@@ -77,14 +83,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-      name: "areas",
-      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-    );
-});
 
 app.UseEndpoints(endpoints =>
 {
