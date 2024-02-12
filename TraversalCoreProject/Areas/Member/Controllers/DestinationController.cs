@@ -6,8 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace TraversalCoreProject.Areas.Member.Controllers
 {
     [Area("Member")]
-    [AllowAnonymous]
-    public class DestinationController : Controller
+	[Route("Member/[controller]/[action]")]
+
+	public class DestinationController : Controller
     {
         DestinationManager destinationManager = new DestinationManager(new EfDestinationDal());
 
@@ -16,5 +17,17 @@ namespace TraversalCoreProject.Areas.Member.Controllers
             var destinations = destinationManager.TGetAll();
             return View(destinations);
         }
+
+        public IActionResult GetCitiesSearchByName(string searchString)
+        {
+            ViewData["CurrentFilter"] = searchString;
+            var values=from x in destinationManager.TGetAll() select x;
+            if(!string.IsNullOrEmpty(searchString))
+            {
+                values=values.Where(y=>y.City.Contains(searchString));
+            }
+            return View(values.ToList());
+        }
+
     }
 }
