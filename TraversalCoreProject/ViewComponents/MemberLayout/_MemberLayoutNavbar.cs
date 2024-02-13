@@ -1,12 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 
 namespace TraversalCoreProject.ViewComponents.MemberLayout
 {
-    public class _MemberLayoutNavbar:ViewComponent
+    public class _MemberLayoutNavbar : ViewComponent
     {
-        public IViewComponentResult Invoke()
+        private readonly UserManager<AppUser> _userManager;
+
+        public _MemberLayoutNavbar(UserManager<AppUser> userManager)
         {
-            return View();
+            _userManager = userManager;
+        }
+        public async Task<IViewComponentResult> InvokeAsync()
+        {
+            // Kullanıcı adını al
+            var currentUser = await _userManager.GetUserAsync(HttpContext.User);
+            return View(currentUser);
         }
     }
 }

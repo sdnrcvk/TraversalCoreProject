@@ -10,17 +10,17 @@
         </div>
     </li>
     <li class="dropdown dropdown-user nav-item">
-        <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="avatar avatar-online"><img src="~/member/theme-assets/images/portrait/small/avatar-s-19.png" alt="avatar"><i></i></span></a>
+        <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="avatar avatar-online"><img src="@Model.ImageUrl" alt="avatar"><i></i></span></a>
         <div class="dropdown-menu dropdown-menu-right">
             <div class="arrow_box_right">
-                <a class="dropdown-item" href="#"><span class="avatar avatar-online"><img src="~/member/theme-assets/images/portrait/small/avatar-s-19.png" alt="avatar"><span class="user-name text-bold-700 ml-1">Sedanur Çevik</span></span></a>
+                <a class="dropdown-item" href="#"><span class="avatar avatar-online"><img src="@Model.ImageUrl alt="avatar"><span class="user-name text-bold-700 ml-1">@Model.Name @Model.Surname</span></span></a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/Member/Profile/Index/"><i class="ft-user"></i> Profili Düzenle</a>
                 <a class="dropdown-item" href="#"><i class="ft-mail"></i> Aktif Rezervasyonlarım</a>
                 <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Geçmiş Rezervasyonlarım</a>
                 <a class="dropdown-item" href="#"><i class="ft-message-square"></i> Onay Bekleyenler</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"><i class="ft-power"></i> Çıkış Yap</a>
+                <a class="dropdown-item" href="/Logout/Index/"><i class="ft-power"></i> Çıkış Yap</a>
             </div>
         </div>
     </li>
