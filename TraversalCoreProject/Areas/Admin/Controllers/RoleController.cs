@@ -126,7 +126,7 @@ namespace TraversalCoreProject.Areas.Admin.Controllers
                     await _userManager.RemoveFromRoleAsync(user, item.RoleName);
                 }
             }
-            return RedirectToAction("UserList");
+            return RedirectToAction("User","Admin");
         }
     }
 }
