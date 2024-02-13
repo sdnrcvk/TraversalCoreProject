@@ -79,7 +79,7 @@
 
         public class Strikethroughprice
         {
-            public int value { get; set; }
+            public float value { get; set; }
             public string currency { get; set; }
         }
 
