@@ -154,10 +154,17 @@
                         </div>
                     </div>
                     <!--//author-card-->
+
+                    <!-- Yorum yapma formu ve diğer içerikler -->
                     @await Component.InvokeAsync("_CommentListPartial",new {id=ViewBag.Id})
                     @if (User.Identity.IsAuthenticated)
                     {
-                    @await Html.PartialAsync("~/Views/Comment/AddComment.cshtml",new {id=ViewBag.destId})
+                        @await Html.PartialAsync("~/Views/Comment/AddComment.cshtml",new {id=ViewBag.destId})
+                    }else{
+                        <br />
+                        <p>Yorum yapabilmek için giriş yapmalısınız. <a href="/Login/SignIn">Giriş yapın</a>.</p>
+                    }
+
                 </div>
             </div>
         </div>

@@ -24,13 +24,17 @@ namespace TraversalCoreProject.Controllers
             return View(destinations);
         }
 
+
         [HttpGet]
         public async Task<IActionResult> DestinationDetails(int id)
         {
             ViewBag.Id = id;
             ViewBag.destId = id;
-            var value = await _userManager.FindByNameAsync(User.Identity.Name);
-            ViewBag.userId=value.Id;
+            var value = await _userManager.FindByNameAsync(User.Identity.IsAuthenticated ? User.Identity.Name : "");
+            if (value != null)
+            {
+                ViewBag.userId = value.Id;
+            }
             var values =destinationManager.TGetDestinationWithGuide(id);
             return View(values);
         }
